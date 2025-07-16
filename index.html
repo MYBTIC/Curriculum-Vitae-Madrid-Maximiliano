@@ -1,88 +1,166 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículum Vitae - Maximiliano Madrid</title>
-  <link rel="stylesheet" href="Estilos.css">
+  <title>Maximiliano Madrid | Ingeniero de Software</title>
+  <meta name="description" content="Portafolio profesional de Maximiliano Madrid, estudiante de Ingeniería de Software">
+  
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- Iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
-<body>
-  <div class="container">
-    <!-- Columna Izquierda -->
-    <div class="columna-izquierda">
+<body class="font-sans bg-gray-900 text-gray-100">
+  <!-- Fondo interactivo -->
+  <div id="particles-js" class="fixed inset-0 -z-10"></div>
+  
+  <!-- Contenedor principal -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Header 3D -->
+    <header class="relative group">
+      <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-200"></div>
+      <div class="relative bg-gray-800 rounded-lg p-8 flex flex-col md:flex-row items-center">
+        <div class="w-48 h-48 rounded-full border-4 border-white/10 overflow-hidden shadow-xl mb-6 md:mb-0 md:mr-8">
+          <img src="MiFoto.jpg" alt="Maximiliano Madrid" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+        </div>
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-300 mb-2">
+            Maximiliano <span class="block">Madrid</span>
+          </h1>
+          <h2 class="text-xl font-mono text-blue-300 mb-4">// Estudiante de Ingeniería de Software</h2>
+          <div class="flex space-x-4">
+            <a href="#contacto" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-md transition flex items-center">
+              <i class="fas fa-envelope mr-2"></i> Contacto
+            </a>
+            <a href="https://github.com/MYBTIC" target="_blank" class="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-md transition flex items-center">
+              <i class="fab fa-github mr-2"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-      <section class="seccion-centradaNombre">
-        <img src="MiFoto.jpg" alt="Foto de Maximiliano" class="foto-perfil">
-        <h1>Maximiliano</h1>
-        <h1>Madrid</h1>
-        <h2>Estudiante Ing. Software</h2>
-      </section>
+    <!-- Secciones principales -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+      <!-- Columna izquierda -->
+      <div class="lg:col-span-2 space-y-8">
+        <!-- Sobre mí -->
+        <section class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-700/50">
+          <h2 class="text-2xl font-bold mb-4 text-blue-300 flex items-center">
+            <i class="fas fa-user-astronaut mr-3"></i> Mi Perfil
+          </h2>
+          <p class="leading-relaxed">
+            Estudiante proactivo de Ingeniería de Software con habilidades sólidas en desarrollo de software, 
+            diseño de sistemas y resolución de problemas. Apasionado por crear soluciones tecnológicas innovadoras 
+            que impacten positivamente en la sociedad.
+          </p>
+        </section>
 
+        <!-- Experiencia -->
+        <section class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-700/50">
+          <h2 class="text-2xl font-bold mb-6 text-blue-300 flex items-center">
+            <i class="fas fa-briefcase mr-3"></i> Experiencia
+          </h2>
+          
+          <!-- Item experiencia -->
+          <div class="mb-6 relative pl-8 border-l-2 border-blue-500/30 group">
+            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-blue-500 group-hover:bg-purple-500 transition"></div>
+            <h3 class="text-xl font-bold mb-1">Actas de Mediación</h3>
+            <div class="text-sm text-blue-300 mb-2">2024</div>
+            <p class="text-gray-300">
+              Desarrollo de un sistema completo para administrar actas de mediación con interfaz intuitiva 
+              y generación de reportes automatizados.
+            </p>
+          </div>
+          
+          <!-- Más items de experiencia... -->
+        </section>
+      </div>
       
+      <!-- Columna derecha -->
+      <div class="space-y-8">
+        <!-- Contacto -->
+        <section id="contacto" class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-700/50">
+          <h2 class="text-2xl font-bold mb-4 text-blue-300 flex items-center">
+            <i class="fas fa-address-card mr-3"></i> Contacto
+          </h2>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <i class="fas fa-envelope text-blue-300 w-6"></i>
+              <span class="ml-3">maximiliano.madrid@epn.edu.ec</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone text-blue-300 w-6"></i>
+              <span class="ml-3">0992790641</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fab fa-github text-blue-300 w-6"></i>
+              <a href="https://github.com/MYBTIC" target="_blank" class="ml-3 hover:text-blue-300 transition">MYBTIC</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="seccion-centradaIzquierda">
-        <h3>Contacto</h3>
-        <ul>
-        <li><i class="fas fa-envelope"></i> maximiliano.madrid@epn.edu.ec</li>
-        <li><i class="fas fa-phone"></i> 0992790641</li>
-        <li><i class="fas fa-map-marker-alt"></i> Dirección...</li>
-        <li><i class="fab fa-github"></i> <a href="https://github.com/MYBTIC">MYBTIC</a></li>
-        </ul>
-      </section>
-
-      <section class="seccion-centradaIzquierda">
-        <h3>Información</h3>
-        <ul>
-          <li>Carnet de conducir</li>
-          <li>Disponibilidad para viajar</li>
-          <li>Trabajo en equipo y resolución de problemas complejos</li>
-        </ul>
-      </section>
-
-        
-    </div>
-
-    <!-- Columna Derecha -->
-    <div class="columna-derecha">
-      <section>
-        <h3>Mi Perfil</h3>
-        <p>Estudiante proactivo de Ingeniería de Software con habilidades sólidas en desarrollo de software, diseño de sistemas y resolución de problemas...</p>
-      </section>
-
-      <section>
-        <h3>Experiencia</h3>
-        <ul>
-          <li><strong>Actas de Mediación (2024):</strong> sistema para administrar actas de mediación.</li>
-          <li><strong>IA para formularios:</strong> uso de metodologías ágiles.</li>
-          <li><strong>Seguros Sayazu:</strong> gestión de pólizas, siniestros e integración de BD.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>Formación</h3>
-        <p><strong>Escuela Politécnica Nacional</strong><br>2022–2027</p>
-      </section>
-
-      <section>
-        <h3>Habilidades Técnicas</h3>
-        <ul>
-          <li>Lenguajes: Java, C++, Python, SQL</li>
-          <li>Herramientas: Git, Anaconda, VS Code</li>
-          <li>Conocimientos: Diseño de software, redes, sistemas operativos</li>
-        </ul>
-      </section>
-      
-        <h3>Idiomas</h3>
-        <ul>
-          <li>Español: Nativo</li>
-          <li>Inglés: Nivel Alto</li>
-        </ul>
-      </section>
-
-      <section>
+        <!-- Habilidades -->
+        <section class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-700/50">
+          <h2 class="text-2xl font-bold mb-4 text-blue-300 flex items-center">
+            <i class="fas fa-code mr-3"></i> Habilidades
+          </h2>
+          <div class="space-y-4">
+            <div>
+              <h3 class="font-bold mb-2">Lenguajes</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm">Java</span>
+                <span class="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm">C++</span>
+                <span class="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm">SQL</span>
+              </div>
+            </div>
+            <!-- Más habilidades... -->
+          </div>
+        </section>
+      </div>
     </div>
   </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script>
+    // Inicialización de Particles.js
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#3b82f6" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5, "random": true },
+        "size": { "value": 3, "random": true },
+        "line_linked": { "enable": true, "distance": 150, "color": "#3b82f6", "opacity": 0.4, "width": 1 },
+        "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false, "out_mode": "out" }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "push" }
+        }
+      }
+    });
+
+    // Animaciones con GSAP
+    gsap.from("header", { duration: 1.5, y: -50, opacity: 0, ease: "power3.out" });
+    gsap.from("section", { 
+      duration: 1, 
+      y: 30, 
+      opacity: 0, 
+      stagger: 0.2,
+      delay: 0.5,
+      ease: "back.out(1.7)"
+    });
+  </script>
 </body>
 </html>
