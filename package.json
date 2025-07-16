@@ -3,22 +3,32 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "tailwindcss -i ./src/styles.css -o ./public/dist/output.css --watch",
+    "build": "tailwindcss -i ./src/styles.css -o ./public/dist/output.css --minify",
+    "prebuild": "mkdir -p public/dist",
+    "start": "live-server ./public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MYBTIC/Curriculum-Vitae-Madrid-Maximiliano.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "curriculum",
+    "cv",
+    "portfolio",
+    "software-engineer"
+  ],
+  "author": "Maximiliano Madrid",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MYBTIC/Curriculum-Vitae-Madrid-Maximiliano/issues"
   },
   "homepage": "https://github.com/MYBTIC/Curriculum-Vitae-Madrid-Maximiliano#readme",
-  "description": "",
+  "description": "Modern and interactive CV/Resume for Maximiliano Madrid - Software Engineering Student",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "live-server": "^1.2.2",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11"
   },
