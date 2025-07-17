@@ -8,6 +8,10 @@
     {
       "src": "dist/output.css",
       "use": "@vercel/static"
+    },
+    {
+      "src": "images/(.*)",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -16,8 +20,8 @@
       "dest": "dist/$1"
     },
     {
-      "src": "/MiFoto.jpg",
-      "dest": "MiFoto.jpg"
+      "src": "/images/(.*)",
+      "dest": "images/$1"
     },
     {
       "src": "/(.*)",
