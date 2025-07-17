@@ -16,6 +16,10 @@
       "dest": "dist/$1"
     },
     {
+      "src": "/MiFoto.jpg",
+      "dest": "MiFoto.jpg"
+    },
+    {
       "src": "/(.*)",
       "dest": "index.html"
     }
