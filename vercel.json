@@ -4,9 +4,17 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "dist/output.css",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/dist/(.*)",
+      "dest": "dist/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "index.html"
