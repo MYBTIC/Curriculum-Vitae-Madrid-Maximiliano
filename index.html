@@ -322,10 +322,10 @@
     const cert1 = 'https://drive.google.com/file/d/1LPx_gaeRgYMFefkFkrOYOYfU7J4rlkz6/view?usp=sharing';
     const cert2 = 'https://drive.google.com/file/d/1b2104YcP6G9pf6c9v3vjIT2wldivOqV1/view?usp=sharing';
 
-    const win1 = window.open(cert1, '_blank');
-
+    const win2 = window.open(cert2, '_blank');
+    
     setTimeout(() => {
-      const win2 = window.open(cert2, '_blank');
+      const win1 = window.open(cert1, '_blank');
 
       // Por si el navegador bloquea la segunda pestaña
       if (!win1 || !win2) {
