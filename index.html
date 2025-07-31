@@ -308,33 +308,34 @@
             <div>
 <div class="flex justify-between mb-1">
   <span>Inglés</span>
-  <!-- Botón con apariencia y comportamiento de enlace -->
-  <a href="#" onclick="openCertificates(event)" 
+<!-- Botón con apariencia y comportamiento de enlace -->
+<a href="#" onclick="openCertificates(event)" 
    class="text-blue-300 ml-2 hover:text-blue-400 transition hover:underline 
           cursor-pointer bg-transparent border-none p-0 font-normal inline">
   &nbsp;&nbsp;Avanzado
 </a>
 </div>
-
 <script>
   function openCertificates(event) {
     event.preventDefault();
-    
-    // Codificación URL para manejar espacios en nombres de archivo
-    const cert1 = encodeURI('https://drive.google.com/file/d/1LPx_gaeRgYMFefkFkrOYOYfU7J4rlkz6/view?usp=sharing');
-    const cert2 = encodeURI('https://drive.google.com/file/d/1b2104YcP6G9pf6c9v3vjIT2wldivOqV1/view?usp=sharing');
-    
-    // Abre ambos PDFs directamente
+
+    const cert1 = 'https://drive.google.com/file/d/1LPx_gaeRgYMFefkFkrOYOYfU7J4rlkz6/view?usp=sharing';
+    const cert2 = 'https://drive.google.com/file/d/1b2104YcP6G9pf6c9v3vjIT2wldivOqV1/view?usp=sharing';
+
     const win1 = window.open(cert1, '_blank');
-    const win2 = window.open(cert2, '_blank');
-    
-    // Manejo de navegadores que bloquean popups
-    if (!win1 || !win2) {
-      window.location.href = cert1;
-      setTimeout(() => window.open(cert2, '_blank'), 100);
-    }
+
+    setTimeout(() => {
+      const win2 = window.open(cert2, '_blank');
+
+      // Por si el navegador bloquea la segunda pestaña
+      if (!win1 || !win2) {
+        window.location.href = cert1;
+        setTimeout(() => window.open(cert2, '_blank'), 300);
+      }
+    }, 300);
   }
 </script>
+
               <div class="w-full bg-gray-700 rounded-full h-2">
                 <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
               </div>
