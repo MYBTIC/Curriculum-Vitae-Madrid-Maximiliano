@@ -32,27 +32,33 @@
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" as="script">
 </head>
 
-<body class="font-sans bg-gray-900 text-gray-100">
+<body class="font-sans bg-gray-900 text-gray-100 theme-transition">
   <!-- Fondo interactivo -->
   <div id="particles-js" class="fixed inset-0 -z-10"></div>
+
+      
+      
+      <!-- Indicador de estado (opcional) -->
+      <div class="h-8 flex items-center justify-center">
+        <div class="theme-indicator w-2 h-2 rounded-full bg-blue-500 opacity-0 transition-opacity duration-300"></div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Contenedor principal -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <!-- Header 3D -->
     <header class="relative group">
-      <div
-        class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-200">
-      </div>
+      <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-200"></div>
       <div class="relative bg-gray-800 rounded-lg p-8 flex flex-col md:flex-row items-center">
+        
         <div class="w-48 h-48 rounded-full border-4 border-white/10 overflow-hidden shadow-xl mb-6 md:mb-0 md:mr-8">
-          <!-- <img src="https://i.ibb.co/ZpbBLFCW/mifoto.jpg" alt="Maximiliano Madrid"
-            class="w-full h-full object-cover hover:scale-105 transition duration-500" loading="lazy"> -->
-            <img src="https://i.ibb.co/WZDrgdy/mifoto2.jpg" alt="Maximiliano Madrid"
+          <img src="https://i.ibb.co/WZDrgdy/mifoto2.jpg" alt="Maximiliano Madrid"
             class="w-full h-full object-cover hover:scale-105 transition duration-500" loading="lazy">
         </div>
         <div>
-          <h1
-            class="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-300 mb-2">
+          <h1 class="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-300 mb-2">
             Maximiliano <span class="block">Madrid</span>
           </h1>
           <h2 class="text-xl font-mono text-blue-300 mb-4">Estudiante de Ingeniería de Software</h2>
@@ -83,7 +89,7 @@
             <i class="fas fa-user-astronaut mr-3"></i> Mi Perfil
           </h2>
           <p class="leading-relaxed">
-            Soy estudiante de Ingeniería de Software en la EPN con más de tres proyectos desarrollados que integran tecnologías como Java, Spring Boot, React y TensorFlow. Me especializo en construir soluciones prácticas que optimicen procesos administrativos y potencien la experiencia de usuario. Mi enfoque combina lógica, escalabilidad y diseño centrado en el usuario.
+            Soy estudiante de Ingeniería de Software en la Escuela Politécnica Nacional (Sexto semestre) con más de tres proyectos desarrollados que integran tecnologías como Java, Spring Boot y TensorFlow. Me especializo en construir soluciones prácticas que optimicen procesos administrativos y potencien la experiencia de usuario. Mi enfoque combina lógica, escalabilidad y diseño centrado en el usuario.
           </p>
         </section>
 
@@ -95,8 +101,7 @@
 
           <!-- Item experiencia -->
           <div class="mb-6 relative pl-8 border-l-2 border-blue-500/30 group">
-            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-blue-500 group-hover:bg-purple-500 transition">
-            </div>
+            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-blue-500 group-hover:bg-purple-500 transition"></div>
             <h3 class="text-xl font-bold mb-1">Centro de mediación Fundación Comunidad y Justicia</h3>
             <div class="text-sm text-blue-300 mb-2">2024</div>
             <p class="text-gray-300">
@@ -105,8 +110,7 @@
           </div>
 
           <div class="mb-6 relative pl-8 border-l-2 border-blue-500/30 group">
-            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-blue-500 group-hover:bg-purple-500 transition">
-            </div>
+            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-blue-500 group-hover:bg-purple-500 transition"></div>
             <h3 class="text-xl font-bold mb-1">IA para formularios</h3>
             <div class="text-sm text-blue-300 mb-2">2023</div>
             <p class="text-gray-300">
@@ -115,23 +119,22 @@
           </div>
 
           <div class="mb-6 relative pl-8 border-l-2 border-blue-500/30 group">
-            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-blue-500 group-hover:bg-purple-500 transition">
-            </div>
+            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-blue-500 group-hover:bg-purple-500 transition"></div>
             <h3 class="text-xl font-bold mb-1">Seguros Sayazu</h3>
             <div class="text-sm text-blue-300 mb-2">2022-2023</div>
             <p class="text-gray-300">
               Desarrollo de sistema de gestión de pólizas y siniestros con integración de base de datos.
             </p>
           </div>
-           <!-- Nuevo item ToDoList -->
-<div class="mb-6 relative pl-8 border-l-2 border-blue-500/30 group">
-  <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-blue-500 group-hover:bg-purple-500 transition"></div>
-  <h3 class="text-xl font-bold mb-1">ToDoList - Spring Boot</h3>
-  <div class="text-sm text-blue-300 mb-2">2024</div>
-  <p class="text-gray-300">
-    App de tareas con JWT, H2/PostgreSQL y Docker. API REST documentada.
-  </p>
-</div>
+
+          <div class="mb-6 relative pl-8 border-l-2 border-blue-500/30 group">
+            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-blue-500 group-hover:bg-purple-500 transition"></div>
+            <h3 class="text-xl font-bold mb-1">ToDoList - Spring Boot</h3>
+            <div class="text-sm text-blue-300 mb-2">2024</div>
+            <p class="text-gray-300">
+              App de tareas con JWT, H2/PostgreSQL y Docker. API REST documentada.
+            </p>
+          </div>
         </section>
 
         <!-- Proyectos -->
@@ -140,35 +143,27 @@
             <i class="fas fa-code-branch mr-3"></i> Proyectos Destacados
           </h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <!-- Proyecto 1 -->
-            <div
-              class="group relative overflow-hidden rounded-xl h-48 bg-gray-800 hover:bg-gray-700 transition duration-500">
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-600/30 opacity-0 group-hover:opacity-100 transition duration-500">
-              </div>
+            <div class="group relative overflow-hidden rounded-xl h-48 bg-gray-800 hover:bg-gray-700 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-600/30 opacity-0 group-hover:opacity-100 transition duration-500"></div>
               <div class="relative h-full p-6 flex flex-col">
                 <h3 class="text-xl font-bold mb-2 group-hover:text-blue-300 transition">Sistema de Mediación</h3>
-                <p class="text-gray-300 group-hover:text-white/90 transition mb-4">Aplicativo para gestión de actas
-                  de mediación</p>
+                <p class="text-gray-300 group-hover:text-white/90 transition mb-4">Aplicativo para gestión de actas de mediación</p>
                 <div class="mt-auto flex flex-wrap gap-2">
                   <span class="skill-tag">Java</span>
                   <span class="skill-tag">Spring Boot</span>
-                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">SQL</span>
                 </div>
               </div>
             </div>
 
             <!-- Proyecto 2 -->
-            <div
-              class="group relative overflow-hidden rounded-xl h-48 bg-gray-800 hover:bg-gray-700 transition duration-500">
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-600/30 opacity-0 group-hover:opacity-100 transition duration-500">
-              </div>
+            <div class="group relative overflow-hidden rounded-xl h-48 bg-gray-800 hover:bg-gray-700 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-600/30 opacity-0 group-hover:opacity-100 transition duration-500"></div>
               <div class="relative h-full p-6 flex flex-col">
                 <h3 class="text-xl font-bold mb-2 group-hover:text-blue-300 transition">IA para Formularios</h3>
-                <p class="text-gray-300 group-hover:text-white/90 transition mb-4">Procesamiento inteligente de
-                  formularios complejos</p>
+                <p class="text-gray-300 group-hover:text-white/90 transition mb-4">Procesamiento inteligente de formularios complejos</p>
                 <div class="mt-auto flex flex-wrap gap-2">
                   <span class="skill-tag">Python</span>
                   <span class="skill-tag">TensorFlow</span>
@@ -177,28 +172,27 @@
               </div>
             </div>
           </div>
-          <!-- Dentro de la sección "Proyectos Destacados", añade este nuevo card -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-  <!-- Proyecto 3 - ToDoList -->
-  <div class="group relative overflow-hidden rounded-xl h-48 bg-gray-800 hover:bg-gray-700 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-600/30 opacity-0 group-hover:opacity-100 transition duration-500"></div>
-    <div class="relative h-full p-6 flex flex-col">
-      <h3 class="text-xl font-bold mb-2 group-hover:text-blue-300 transition">ToDoList App</h3>
-      <p class="text-gray-300 group-hover:text-white/90 transition mb-4">
-        Aplicación de gestión de tareas con autenticación JWT y múltiples perfiles de base de datos
-      </p>
-      <div class="mt-auto flex flex-wrap gap-2">
-        <span class="skill-tag">Spring Boot</span>
-        <span class="skill-tag">H2 Database</span>
-        <span class="skill-tag">PostgreSQL</span>
-        <span class="skill-tag">Docker</span>
-      </div>
-    </div>
-  </div>
-        </section>
-        
-      </div>
 
+          <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+            <!-- Proyecto 3 - ToDoList -->
+            <div class="group relative overflow-hidden rounded-xl h-48 bg-gray-800 hover:bg-gray-700 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-600/30 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              <div class="relative h-full p-6 flex flex-col">
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-300 transition">ToDoList App</h3>
+                <p class="text-gray-300 group-hover:text-white/90 transition mb-4">
+                  Aplicación de gestión de tareas con autenticación JWT y múltiples perfiles de base de datos
+                </p>
+                <div class="mt-auto flex flex-wrap gap-2">
+                  <span class="skill-tag">Spring Boot</span>
+                  <span class="skill-tag">H2 Database</span>
+                  <span class="skill-tag">PostgreSQL</span>
+                  <span class="skill-tag">Docker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <!-- Columna derecha -->
       <div class="space-y-8">
@@ -230,63 +224,112 @@
 
         <!-- Habilidades -->
         <section class="card">
-  <h2 class="text-2xl font-bold mb-4 text-blue-300 flex items-center">
-    <i class="fas fa-code mr-3"></i> Habilidades
+          <h2 class="text-2xl font-bold mb-4 text-blue-300 flex items-center">
+            <i class="fas fa-code mr-3"></i> Habilidades
+          </h2>
+          <div class="space-y-4">
+            <div>
+              <h3 class="font-bold mb-2">Lenguajes</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">C++</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-bold mb-2">Frameworks</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">TensorFlow</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-bold mb-2">Herramientas</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">IntelliJ</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-bold mb-2">Otras Habilidades</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">Manejar (Licencia Tipo B)</span>
+                <span class="skill-tag">Trabajo en equipo</span>
+                <span class="skill-tag">Resolución de problemas</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Educación -->
+<section class="card">
+  <h2 class="text-3xl font-bold text-blue-300 flex items-center mb-10">
+    <i class="fas fa-graduation-cap mr-4 text-purple-400 text-2xl"></i>
+    Formación Académica
   </h2>
-  <div class="space-y-4">
-    <div>
-      <h3 class="font-bold mb-2">Lenguajes</h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="skill-tag">Java</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">C++</span>
-      </div>
-    </div>
 
-    <div>
-      <h3 class="font-bold mb-2">Frameworks</h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="skill-tag">Spring Boot</span>
-        <span class="skill-tag">TensorFlow</span>
+  <!-- Educación principal -->
+  <div class="mb-16"> <!-- Reduje mb-24 a mb-16 para mejor equilibrio -->
+    <div class="flex items-start">
+      <div class="mr-5 mt-1">
+        <div class="w-3 h-3 rounded-full bg-blue-500"></div>
       </div>
-    </div>
+      <div>
+        <h3 class="text-2xl font-semibold text-white mb-1">Ingeniería de Software</h3>
+        <p class="text-blue-300 text-base">Escuela Politécnica Nacional</p>
+     <!-- Fin de educación principal -->
+<p class="text-sm text-gray-400 mt-2">
+  2022 - Presente <span class="text-gray-500">(Sexto semestre)</span>
+</p>
 
-    <div>
-      <h3 class="font-bold mb-2">Herramientas</h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">Docker</span>
-        <span class="skill-tag">VS Code</span>
-        <span class="skill-tag">IntelliJ</span>
+<div class="py-16"></div>
+
+
+<!-- Cursos especializados -->
+<div>
+  <h3 class="text-xl font-semibold text-white flex items-center mb-6">
+    <i class="fas fa-laptop-code text-blue-400 mr-3"></i>
+    Cursos Especializados
+  </h3>
+
+
+    <!-- Curso destacado -->
+    <div class="group relative border border-gray-800 bg-gray-800/40 hover:bg-gray-800/60 transition-all duration-300 rounded-xl p-8">
+      <div class="flex justify-between items-start gap-6">
+        <div class="flex-1">
+          <h4 class="font-semibold text-lg text-white mb-2">Full-Stack Web Developer</h4>
+          <p class="text-sm text-gray-300 mb-4 leading-relaxed">
+            HTML, CSS, JavaScript, Node, React, PostgreSQL, Web3 y DApps
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="inline-flex items-center text-xs font-medium bg-blue-900/30 text-blue-300 px-3 py-1.5 rounded-full">
+              <i class="fas fa-spinner fa-pulse mr-1.5"></i> En progreso
+            </span>
+            <span class="inline-flex items-center text-xs font-medium bg-gray-700/50 text-gray-300 px-3 py-1.5 rounded-full">
+              <i class="fas fa-graduation-cap mr-1.5"></i> Udemy
+            </span>
+          </div>
+        </div>
+        <div class="bg-blue-900/30 text-blue-300 p-3 rounded-lg group-hover:bg-blue-900/50 transition">
+          <i class="fas fa-code text-xl"></i>
+        </div>
       </div>
-    </div>
-
-    <!-- Nueva sección añadida -->
-    <div>
-      <h3 class="font-bold mb-2">Otras Habilidades</h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="skill-tag">Manejar (Licencia Tipo B)</span>
-        <span class="skill-tag">Trabajo en equipo</span>
-        <span class="skill-tag">Resolución de problemas</span>
+      <div class="mt-6 pt-4 border-t border-gray-700/40 text-xs text-gray-400 flex items-center">
+        <i class="fas fa-info-circle mr-2 text-blue-400"></i>
+        Curso completo con certificación (60+ horas)
       </div>
     </div>
   </div>
 </section>
 
-        <!-- Educación -->
-        <section class="card">
-          <h2 class="text-2xl font-bold mb-4 text-blue-300 flex items-center">
-            <i class="fas fa-graduation-cap mr-3"></i> Educación
-          </h2>
-          <div class="space-y-4">
-            <div>
-              <h3 class="font-bold">Escuela Politécnica Nacional</h3>
-              <p class="text-blue-300">Ingeniería de Software</p>
-              <p class="text-sm text-gray-400">2022 - Presente (Graduación estimada: 2027)</p>
-            </div>
-          </div>
-        </section>
+
+
 
         <!-- Idiomas -->
         <section class="card">
@@ -297,62 +340,51 @@
             <div>
               <div class="flex justify-between mb-1">
                 <span>Español</span>
-                <a href="" class="text-blue-300 ml-2 hover:text-blue-400 transition hover:underline">
-                  &nbsp;&nbsp;Nativo
-                </a>
+                <span class="text-blue-300">&nbsp;&nbsp;Nativo</span>
               </div>
               <div class="w-full bg-gray-700 rounded-full h-2">
                 <div class="bg-blue-500 h-2 rounded-full" style="width: 100%"></div>
               </div>
             </div>
             <div>
-<div class="flex justify-between mb-1">
-  <span>Inglés</span>
-<!-- Botón con apariencia y comportamiento de enlace -->
-<a href="#" onclick="openCertificates(event)" 
-   class="text-blue-300 ml-2 hover:text-blue-400 transition hover:underline 
-          cursor-pointer bg-transparent border-none p-0 font-normal inline">
-  &nbsp;&nbsp;Avanzado
-</a>
+<div class="mb-8">
+  <div class="flex justify-between items-start mb-3">
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-2">Inglés</h4>
+      <div class="flex flex-col sm:flex-row gap-2">
+        <span class="inline-flex items-center text-sm bg-blue-900/20 px-3 py-1 rounded-full">
+          <i class="fas fa-certificate text-xs mr-2 opacity-70"></i>
+          B2 - Cendia Language Institute
+        </span>
+        <span class="inline-flex items-center text-sm text-purple-300 bg-purple-900/20 px-3 py-1 rounded-full">
+          <i class="fas fa-certificate text-xs mr-2 opacity-70"></i>
+          Academic 3 - CEC
+        </span>
+      </div>
+    </div>
+    <a href="#" onclick="openCertificates(event)"
+       class="text-sm font-medium text-blue-300 hover:text-blue-300 transition-colors
+              whitespace-nowrap ml-4 pt-1">
+      <i class="fas fa-external-link-alt mr-1"></i>Certificados
+    </a>
+  </div>
+  
+  <div class="mt-4">
+    <div class="w-full bg-gray-700/60 rounded-full h-2 overflow-hidden">
+      <div class="bg-gradient-to-r from-blue-500 to-blue-400 h-full rounded-full" 
+           style="width: 80%"></div>
+    </div>
+  </div>
 </div>
-<script>
-  function openCertificates(event) {
-    event.preventDefault();
-
-    const cert1 = 'https://drive.google.com/file/d/1LPx_gaeRgYMFefkFkrOYOYfU7J4rlkz6/view?usp=sharing';
-    const cert2 = 'https://drive.google.com/file/d/1b2104YcP6G9pf6c9v3vjIT2wldivOqV1/view?usp=sharing';
-
-    const win2 = window.open(cert2, '_blank');
-    
-    setTimeout(() => {
-      const win1 = window.open(cert1, '_blank');
-
-      // Por si el navegador bloquea la segunda pestaña
-      if (!win1 || !win2) {
-        window.location.href = cert1;
-        setTimeout(() => window.open(cert2, '_blank'), 300);
-      }
-    }, 300);
-  }
-</script>
-
-              <div class="w-full bg-gray-700 rounded-full h-2">
-                <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
-              </div>
-            </div>
-          </div>
         </section>
       </div>
     </div>
 
     <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-12 border-t border-gray-800">
       <div class="flex flex-col md:flex-row justify-between items-center">
-        <!-- Texto de copyright - añadí mr-0 md:mr-12 para crear espacio a la derecha -->
         <p class="text-gray-400 mb-4 md:mb-0 mr-0 md:mr-8">
-  © <span id="year"></span> Maximiliano Madrid. Todos los derechos reservados.
-</p>
-
-        <!-- Contenedor de iconos - ahora usará el espacio restante -->
+          © <span id="year"></span> Maximiliano Madrid. Todos los derechos reservados.
+        </p>
         <div class="flex space-x-6">
           <a href="https://github.com/MYBTIC" target="_blank" class="text-gray-400 hover:text-blue-300 transition">
             <i class="fab fa-github text-xl"></i>
@@ -366,74 +398,241 @@
         </div>
       </div>
     </footer>
+  </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script>
-
-      // Año dinámico
-  document.addEventListener('DOMContentLoaded', () => {
-    const yearSpan = document.getElementById('year');
-    if (yearSpan) {
-      yearSpan.textContent = new Date().getFullYear();
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script>
+    // === SISTEMA DE TEMA CLARO/OSCURO ===
+    let particlesInstance = null;
+    
+    // Función para alternar entre temas
+    function toggleTheme() {
+      const body = document.body;
+      const isLight = body.classList.toggle('light-theme');
+      
+      // Actualizar iconos del tema
+      const icons = document.querySelectorAll('#theme-toggle i, #theme-toggle-mobile i');
+      icons.forEach(icon => {
+        icon.className = isLight ? 'fas fa-sun' : 'fas fa-moon';
+      });
+      
+      // Actualizar partículas según el tema
+      updateParticles(isLight ? '#6b7280' : '#3b82f6', isLight ? 0.2 : 0.5);
+      
+      // Guardar preferencia
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      
+      // Animación del botón
+      animateThemeButton();
     }
-  });
-      // Inicialización de Particles.js
-      document.addEventListener('DOMContentLoaded', function () {
-        if (document.getElementById('particles-js')) {
-          particlesJS("particles-js", {
-            "particles": {
-              "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-              "color": { "value": "#3b82f6" },
-              "shape": { "type": "circle" },
-              "opacity": { "value": 0.5, "random": true },
-              "size": { "value": 3, "random": true },
-              "line_linked": { "enable": true, "distance": 150, "color": "#3b82f6", "opacity": 0.4, "width": 1 },
-              "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false, "out_mode": "out" }
+
+    // Cargar tema guardado o preferencia del sistema
+    function loadTheme() {
+      const savedTheme = localStorage.getItem('theme') || 
+                        (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      
+      if (savedTheme === 'light') {
+        document.body.classList.add('light-theme');
+        updateParticles('#6b7280', 0.2);
+      } else {
+        document.body.classList.remove('light-theme');
+        updateParticles('#3b82f6', 0.5);
+      }
+      
+      // Actualizar iconos
+      const icons = document.querySelectorAll('#theme-toggle i, #theme-toggle-mobile i');
+      const isLight = document.body.classList.contains('light-theme');
+      icons.forEach(icon => {
+        icon.className = isLight ? 'fas fa-sun' : 'fas fa-moon';
+      });
+    }
+
+    // Animación del botón de tema
+    function animateThemeButton() {
+      const buttons = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
+      buttons.forEach(btn => {
+        if (btn) {
+          btn.style.transform = 'scale(0.8) rotate(180deg)';
+          setTimeout(() => {
+            btn.style.transform = 'scale(1) rotate(0deg)';
+          }, 200);
+        }
+      });
+    }
+
+    // Actualizar partículas
+    function updateParticles(color, opacity) {
+      if (particlesInstance) {
+        particlesInstance.particles.color.value = color;
+        particlesInstance.particles.line_linked.color = color;
+        particlesInstance.particles.opacity.value = opacity;
+        particlesInstance.refresh();
+      }
+    }
+
+    // === FUNCIONALIDADES ADICIONALES ===
+    
+    // Abrir certificados
+    function openCertificates(event) {
+      event.preventDefault();
+      const cert1 = 'https://drive.google.com/file/d/1LPx_gaeRgYMFefkFkrOYOYfU7J4rlkz6/view?usp=sharing';
+      const cert2 = 'https://drive.google.com/file/d/1b2104YcP6G9pf6c9v3vjIT2wldivOqV1/view?usp=sharing';
+
+      const win2 = window.open(cert2, '_blank');
+      setTimeout(() => {
+        const win1 = window.open(cert1, '_blank');
+        if (!win1 || !win2) {
+          window.location.href = cert1;
+          setTimeout(() => window.open(cert2, '_blank'), 300);
+        }
+      }, 300);
+    }
+
+    // Descargar CV
+    function downloadCV(event) {
+      // Simular descarga (reemplaza con tu URL real)
+      const link = document.createElement('a');
+      link.href = 'data:text/plain;charset=utf-8,CV de Maximiliano Madrid';
+      link.download = 'CV_Maximiliano_Madrid.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // Feedback visual
+      const button = event.target.closest('button');
+      const icon = button.querySelector('i');
+      
+      icon.className = 'fas fa-check';
+      button.style.transform = 'scale(1.1)';
+      
+      setTimeout(() => {
+        icon.className = 'fas fa-download';
+        button.style.transform = 'scale(1)';
+      }, 1500);
+    }
+
+    // Inicializar partículas
+    function initializeParticles() {
+      if (document.getElementById('particles-js')) {
+        particlesJS("particles-js", {
+          "particles": {
+            "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+            "color": { "value": "#3b82f6" },
+            "shape": { "type": "circle" },
+            "opacity": { 
+              "value": 0.5, 
+              "random": true,
+              "anim": { "enable": true, "speed": 1, "opacity_min": 0.1, "sync": false }
             },
-            "interactivity": {
-              "detect_on": "canvas",
-              "events": {
-                "onhover": { "enable": true, "mode": "grab" },
-                "onclick": { "enable": true, "mode": "push" }
-              }
+            "size": { 
+              "value": 3, 
+              "random": true,
+              "anim": { "enable": true, "speed": 2, "size_min": 0.1, "sync": false }
+            },
+            "line_linked": { 
+              "enable": true, 
+              "distance": 150, 
+              "color": "#3b82f6", 
+              "opacity": 0.4, 
+              "width": 1 
+            },
+            "move": { 
+              "enable": true, 
+              "speed": 2, 
+              "direction": "none", 
+              "random": true, 
+              "straight": false, 
+              "out_mode": "out",
+              "bounce": false,
+              "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 }
             }
-          });
-        }
-        // Actualizar el año en el footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-
-        // Animaciones con GSAP
-        gsap.from("header", { duration: 1.5, y: -50, opacity: 0, ease: "power3.out" });
-        gsap.from("section", {
-          duration: 1,
-          y: 30,
-          opacity: 0,
-          stagger: 0.2,
-          delay: 0.5,
-          ease: "back.out(1.7)"
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": { "enable": true, "mode": "grab" },
+              "onclick": { "enable": true, "mode": "push" },
+              "resize": true
+            },
+            "modes": {
+              "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+              "push": { "particles_nb": 4 }
+            }
+          },
+          "retina_detect": true
         });
+        
+        setTimeout(() => {
+          if (window.pJSDom && window.pJSDom[0]) {
+            particlesInstance = window.pJSDom[0].pJS;
+          }
+        }, 100);
+      }
+    }
 
-        // Efecto de scroll suave para anclas
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-              behavior: 'smooth'
-            });
-          });
+    // === INICIALIZACIÓN ===
+    document.addEventListener('DOMContentLoaded', function() {
+      // Configurar año en el footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+      
+      // Cargar tema
+      loadTheme();
+      
+      // Event listeners para botones de tema
+      document.querySelectorAll('#theme-toggle, #theme-toggle-mobile').forEach(btn => {
+        btn.addEventListener('click', toggleTheme);
+      });
+      
+      // Event listeners para botones de descarga
+      document.querySelectorAll('#download-cv, #download-cv-mobile').forEach(btn => {
+        btn.addEventListener('click', downloadCV);
+      });
+      
+      // Inicializar partículas
+      initializeParticles();
+      
+      // Animaciones con GSAP
+      gsap.from("header", { duration: 1.5, y: -50, opacity: 0, ease: "power3.out" });
+      gsap.from("section", { duration: 1, y: 30, opacity: 0, stagger: 0.2, delay: 0.5, ease: "back.out(1.7)" });
+      gsap.from(".floating-controls", { duration: 1, x: 100, opacity: 0, delay: 1, ease: "back.out(1.7)" });
+      
+      // Scroll suave
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
       });
-
-      // Analytics simple (opcional)
-      window.addEventListener('load', function () {
-        if (typeof fetch === 'function') {
-          fetch('https://api.countapi.xyz/hit/maximilianomadrid/cv');
-        }
+      
+      // Efecto parallax
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (header) header.style.transform = `translateY(${window.pageYOffset * 0.1}px)`;
       });
-    </script>
+      
+      // Detectar cambios en la preferencia del sistema
+      if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            document.body.classList.toggle('light-theme', !e.matches);
+            updateParticles(e.matches ? '#3b82f6' : '#6b7280', e.matches ? 0.5 : 0.2);
+          }
+        });
+      }
+    });
+    
+    // Analytics (opcional)
+    window.addEventListener('load', () => {
+      if (typeof fetch === 'function') {
+        fetch('https://api.countapi.xyz/hit/maximilianomadrid/cv').catch(() => {});
+      }
+    });
+    
+    // Manejo de errores globales
+    window.addEventListener('error', e => console.warn('Error capturado:', e.error));
+  </script>
 </body>
-
 </html>
