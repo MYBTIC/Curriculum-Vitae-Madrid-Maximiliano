@@ -2,13 +2,14 @@
   "name": "curriculum-vitae-madrid-maximiliano",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "dev": "tailwindcss -i ./src/styles.css -o ./public/dist/output.css --watch",
-    "build": "tailwindcss -i ./src/styles.css -o ./public/dist/output.css --minify",
-    "prebuild": "mkdir -p public/dist",
-    "start": "live-server ./public",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "prebuild": "powershell -Command \"New-Item -ItemType Directory -Force -Path public/dist\"",
+  "dev": "tailwindcss -i ./input.css -o ./public/dist/output.css --watch",
+  "build": "npm run prebuild && tailwindcss -i ./input.css -o ./public/dist/output.css --minify",
+  "start": "live-server ./public",
+  "test": "echo \"Error: no test specified\" && exit 1"
+}
+,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MYBTIC/Curriculum-Vitae-Madrid-Maximiliano.git"
