@@ -30,9 +30,7 @@
     "autoprefixer": "^10.4.21",
     "live-server": "^1.2.2",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^3.4.0"
   },
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.11"
-  }
+  "dependencies": {}
 }
