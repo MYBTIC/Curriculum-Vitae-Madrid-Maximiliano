@@ -2,14 +2,14 @@
   "name": "curriculum-vitae-madrid-maximiliano",
   "version": "1.0.0",
   "main": "index.js",
-"scripts": {
-  "prebuild": "powershell -Command \"New-Item -ItemType Directory -Force -Path public/dist\"",
-  "dev": "tailwindcss -i ./input.css -o ./public/dist/output.css --watch",
-  "build": "npm run prebuild && tailwindcss -i ./input.css -o ./public/dist/output.css --minify",
-  "start": "live-server ./public",
-  "test": "echo \"Error: no test specified\" && exit 1"
-}
-,
+  "description": "Modern and interactive CV/Resume for Maximiliano Madrid - Software Engineering Student",
+  "scripts": {
+    "prebuild": "mkdir -p public/dist",
+    "dev": "tailwindcss -i ./input.css -o ./public/dist/output.css --watch",
+    "build": "npm run prebuild && tailwindcss -i ./input.css -o ./public/dist/output.css --minify",
+    "start": "live-server ./public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MYBTIC/Curriculum-Vitae-Madrid-Maximiliano.git"
@@ -26,7 +26,6 @@
     "url": "https://github.com/MYBTIC/Curriculum-Vitae-Madrid-Maximiliano/issues"
   },
   "homepage": "https://github.com/MYBTIC/Curriculum-Vitae-Madrid-Maximiliano#readme",
-  "description": "Modern and interactive CV/Resume for Maximiliano Madrid - Software Engineering Student",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "live-server": "^1.2.2",
