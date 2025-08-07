@@ -5,8 +5,8 @@
   "description": "Modern and interactive CV/Resume for Maximiliano Madrid - Software Engineering Student",
   "scripts": {
     "prebuild": "mkdir -p public/dist",
-    "dev": "tailwindcss -i ./input.css -o ./public/dist/output.css --watch",
-    "build": "npm run prebuild && tailwindcss -i ./input.css -o ./public/dist/output.css --minify",
+    "dev": "npx tailwindcss -i ./input.css -o ./public/dist/output.css --watch",
+    "build": "npm run prebuild && npx tailwindcss -i ./input.css -o ./public/dist/output.css --minify",
     "start": "live-server ./public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
